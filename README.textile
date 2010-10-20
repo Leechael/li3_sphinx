@@ -1,0 +1,30 @@
+h2. li3_sphinx
+
+h5. Sphinx Client Lithium (a.k.a. li3) binding.
+
+h3. Usage
+
+use \li3_sphinx\http\Sphinx;
+Sphinx::configuration(array(
+    'default' => array(
+        'production' => array(
+            'host'  => '127.0.0.1',
+            'port'  => '3312'
+        ),
+        'test' => array(
+            'host'  => '10.0.1.203',
+            'port'  => '3312'
+        ),
+        'development' => array(
+            'host'  => '127.0.0.1',
+            'port'  => '3312'
+        ),
+    )
+));
+$client = Sphinx::get();
+
+$results = $client->Query('sphinx based fulltext search');
+
+h3. References
+
+Document for Sphinx API is here: http://sphinxsearch.com/docs/current.html
