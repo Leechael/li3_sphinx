@@ -4,6 +4,7 @@ h5. Sphinx Client Lithium (a.k.a. li3) binding.
 
 h3. Usage
 
+<pre>
 use \li3_sphinx\http\Sphinx;
 Sphinx::configuration(array(
     'default' => array(
@@ -24,7 +25,8 @@ Sphinx::configuration(array(
 $client = Sphinx::get();
 
 $results = $client->Query('sphinx based fulltext search');
+</pre>
 
 h3. References
 
-Document for Sphinx API is here: http://sphinxsearch.com/docs/current.html
+Document for Sphinx API is here: "http://sphinxsearch.com/docs/current.html":http://sphinxsearch.com/docs/current.html
