@@ -6,7 +6,7 @@ h3. Usage
 
 <pre>
 use \li3_sphinx\http\Sphinx;
-Sphinx::configuration(array(
+Sphinx::config(array(
     'default' => array(
         'production' => array(
             'host'  => '127.0.0.1',
